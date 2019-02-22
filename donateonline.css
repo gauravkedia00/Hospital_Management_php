@@ -1,0 +1,26 @@
+section{
+	width:100%;
+	margin:1% auto;
+	padding:10px;
+	/*background:linear-gradient(to bottom right , white , black);*/
+}
+h3{
+	color:brown;
+}
+h5{
+	border-top:1px solid gray;
+	border-bottom:1px solid gray;
+	background:linear-gradient(to bottom , lightgray , white);
+	line-height:30px;
+	color:indigo;
+}
+textarea{
+	vertical-align:top;
+}
+
+h5~label{
+	color:red;
+}
+.requiredfield{
+text-align:center;
+}

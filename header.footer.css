@@ -1,0 +1,145 @@
+ body{
+	width:98%;
+	margin:10px auto;
+}
+header{
+	background:linear-gradient(to bottom right,#aaaaaa, white);
+	border-radius:5px;
+	height:110px;
+}
+header img{
+	width:9%;
+	/*background:linear-gradient(to bottom right,#aaaaaa, white);*/
+	height:110px;
+	padding:5px;
+	border-radius:100%;
+	float:left;
+	margin-right:20px;
+}
+#banner{
+	line-height:100px;
+	width:50%;
+	font-family:Segoe Print,Script MT;
+	font-size:2em;
+	float:left;
+}
+header nav ul{
+	list-style:none;
+	text-align:right;
+	margin-right:1%;
+}
+header nav ul li{
+	display:inline-block;
+}
+header nav a:link,header nav a:visited{
+	text-decoration:none;
+	display:block;
+	padding:10px;
+	border-radius:1px;
+}
+header nav a:hover,header nav a:active,header nav .active a:link,header nav .active a:visited{
+	background:rgba(255,0,0,0.6);
+	color:white;
+	box-shadow:0px 3px 1px indigo;
+}
+
+/* footer */
+
+footer{
+	clear:both;
+	background:rgba(13,72,28,0.5);
+	padding:2px;
+	border-radius:5px;
+	margin-top:3%;
+}
+footer nav a{
+	text-decoration:none;
+}
+footer p {
+	float:left;
+	padding:0;
+	margin:10px;
+}
+footer ul{
+	list-style:circle;
+}
+footer ul a:link,footer ul a:visited{
+	color:lightgray;
+}
+footer ul a:hover,footer ul a:active{
+	color:darkgreen;
+}
+ 
+footer>a{
+	color:white;
+	float:right;
+	padding:1%;
+}
+footer>a::after{
+	content:url("toparrow.gif");
+}
+/*<<<<<media query>>>>*/
+
+/***for tablet***/
+
+@media screen and (min-width:501px) and (max-width:1000px){
+	header #banner{
+		line-height:110px;
+		font-size:2.5em;
+	}
+	header img{
+		margin-right:5px;
+		width:15%;
+		height:100px;
+	}
+	header nav li{
+		font-size:130%;
+	}
+	footer{
+		font-size:13px;
+	}
+}
+
+/***for Mobile phones***/
+@media screen and (min-width:100px) and (max-width:500px){
+
+	/*body*/
+	body{
+	   /*font-size:100%;*/
+	   margin:5px auto;
+	}
+	/* header*/
+	header{
+		height:160px;
+	}
+	header img{
+		width:20%;
+		height:50px;
+		padding:1px;
+		float:left;
+		margin-right:1%;
+	}
+	#banner{
+		line-height:60px;width:79%;
+		font-size:1.2em;
+	}
+	header nav ul{
+	   clear:both;
+	   margin:0;padding:0;
+	}
+	header nav ul li{
+		display:inline-block;
+	}
+	header nav a:link,header nav a:visited{
+		padding:7px;
+		/*font-size:78%;*/
+	}
+	header nav a:hover,header nav a:active,header nav .active a:link,header nav .active a:visited{
+	}
+	
+	/* footer */
+	footer{
+		margin-bottom:2px;
+		height:40%;
+	}
+}

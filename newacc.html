@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<title>National Health Care</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="header.footer.css" rel="stylesheet">
+		<!--<link href="main.css" rel="stylesheet">-->
+		<link href="inout.css" rel="stylesheet">
+		<script>
+		//To avoid LowerCase values for Gender input
+			function validation(val)
+			{
+				
+				if(val!="m" || val!="f")
+                {
+					document.getElementsByName('wronggender').value="Please Type M or F only..";
+                    return false;
+                }
+				else
+					return true;
+			}
+		</script>
+		
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+			<img src="mainlogo.png">
+			<b id="banner">National Health Care</b>
+			<nav>
+				<ul>
+					| <li class="active"><a href="index.html">Home</a></li>
+					| <li><a href="aboutus.html">About us</a></li>
+					| <li><a href="contactus.html">Contact us</a></li>
+					| <li><a href="donateonline.php">Donate Online</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="login-page">
+				<div class="form">
+					<form class="register-form" action="addpatient.php" method="post">
+						<input type="text" placeholder="name" name="uname" required >
+						<input type="password" placeholder="password" name="pwd" required >
+						<input type="text" placeholder="M (male) or F (female)"  name="gender" onmouseover="return validation(this.value)" required>
+                        <input type="hidden" name="wronggender">
+						<input type="number" placeholder="Age"  name="age" max="99" min="18" maxlength="2" required>
+						<input type="tel" placeholder="contact no." name="tel" required >
+						<input type="text"  placeholder="Address"  name="addr" required >
+						<input type="email" placeholder="example@domain.com" name="mail" required >
+						<input type="submit" class="button" value="Create" >
+						<p class="message">Already registered? <a href="plogin.html">Sign In</a></p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<a href="#top">TOP</a>
+			<p>
+				<nav id="footnav">
+					<i><a href="../index.html" id="homesite">nationalhealthcare.com</a></i>
+					<ul>
+						<li><a href="../clinic.html">Our Clinics</a></li>
+						<li><a href="../privacypolicy.html">Privacy Policy</a></li>
+						<li><a href="faqs.html">FAQs</a></li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+					var d=new Date();
+					var y=d.getFullYear();
+					document.write("Copyright &copy "+y);
+				</script>
+				<!--Copyright &copy; <?php echo date("Y")?> -->
+			</p>
+		</footer>
+	</body>
+</html>

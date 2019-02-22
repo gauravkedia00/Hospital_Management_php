@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>National Health Care</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link href="main.css" rel="stylesheet">-->
+		<link href="header.footer.css" rel="stylesheet">
+		<link href="inout.css" rel="stylesheet">
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+			<img src="mainlogo.png">
+			<b id="banner">National Health Care</b>
+			<nav>
+				<ul>
+					| <li class="active"><a href="index.html">Home</a></li>
+					| <li><a href="aboutus.html">About us</a></li>
+					| <li><a href="contactus.html">Contact us</a></li>
+					| <li><a href="donateonline.php">Donate Online</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="login-page">
+				<div class="form">
+					<form class="login-form" method="post" action="checklog.php">
+						<input type="text" placeholder="username" name="uname" required/>
+						<input type="password" placeholder="password" name="pwd" required/>
+						<input type="hidden" name="type" value="doctor"/>
+						<input type="submit" class="button" value="login"/>
+						<p class="message">Get your password here! <a href="#docfill">fill this form</a></p>
+					</form>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<a href="#top" id="top">TOP</a>
+				<nav id="footnav">
+					<ul><i><a href="../index.html" id="homesite">nationalhealthcare.com</a></i>
+						<li><a href="../clinic.html">Our Clinics</a></li>
+						<li><a href="../privacypolicy.html">Privacy Policy</a></li>
+						<li><a href="../faqs.html">FAQs</a></li>
+					</ul>
+				</nav>
+				<script type="text/javascript">
+					var d=new Date();
+					var y=d.getFullYear();
+					document.write("Copyright &copy "+y);
+				</script>
+		</footer>
+	</body>
+</html>
